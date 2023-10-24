@@ -586,6 +586,10 @@ video {
   margin-top: 100%;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -733,6 +737,10 @@ video {
 
 .pb-72 {
   padding-bottom: 18rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .align-bottom {
