@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components{
-    .error{
-        @apply border-Tomato bg-Tomato text-tomato;
+    .phoneSize{
+        @apply max-sm:top-0  max-sm:left-0  max-sm:w-full  max-sm:-translate-x-0 max-sm:-translate-y-0;
     }
 }
