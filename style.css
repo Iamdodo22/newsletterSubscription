@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .error{
+        @apply border-Tomato bg-Tomato text-tomato;
+    }
+}

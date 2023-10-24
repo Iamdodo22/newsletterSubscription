@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body class="w-full bg-DarkGrey text-DarkGrey">
+
+  <!-- Sign-up form start -->
+  <main class="flex justify-center items-center mt-20 bg-pWhite w-[75%] mx-auto rounded-lg transition-opacity duration-200 ">
+
+    <div class="flex p-8 max-sm:p-0 items-center justify-between w-full max-lg:flex-col-reverse">
+
+    <section class="flex flex-col gap-5 pl-12 max-lg:pl-0 w-[45%] max-lg:w-full max-sm:px-8">
+      <h2 class="text-5xl font-bold max-[1160px]:whitespace-nowrap max-[1160px]:text-4xl max-[380px]:text-2xl">Stay updated!</h2>
+      <p class="text-base">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="flex flex-col gap-2 text-base">
+        <li class="flex gap-3 items-center"><span><img src="/assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters</li>
+        <li class="flex gap-3 items-center"><span><img src="/assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
+        <li class="flex gap-3 items-center"><span><img src="/assets/images/icon-list.svg" alt=""></span> And much more!</li>
+      </ul>
+      <form class="flex flex-col text-base">
+        <div class="flex justify-between">
+        <label for="email">Email address</label>
+        <small class="text-Tomato">&nbsp;</small>
+      </div>
+        <input type="email" placeholder="email@company.com" id="email" class="border py-2 placeholder:pl-5">
+        <button class="border text-pWhite bg-DarkGrey mt-5 py-2 btn-confirm">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+    <section class="w-[45%] flex justify-end max-lg:justify-center max-lg:w-full max-lg:mb-8">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" class=" h-full max-sm:hidden max-lg:skew-x-6">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" alt="" class="hidden max-sm:block">
+    </section>
+  </div>
+  </main>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <section class=" bg-pWhite fixed top-1/2 left-1/2 shadow-md -translate-x-1/2 -translate-y-1/2  w-[30%] rounded-lg hidden sucess-section transition-opacity">
+    <span class="flex flex-col gap-4 p-10">
+      <img src="/assets/images/icon-success.svg" alt="" class="w-8">
+    <h2 class="font-bold text-5xl text-DarkGrey">Thanks for subscribing!</h2>
+    <p>A confirmation email has been sent to <span class="user-email text-DarkGrey font-bold">ash@loremcompany.com.</span> 
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button class="border bg-DarkGrey text-pWhite p-2 btn-dismiss">Dismiss message</button>
+    </span>
+  
+  </section>
+  <!-- Success message end -->
+
+
+  <script src="/script.js"></script>
+</body>
+</html>
